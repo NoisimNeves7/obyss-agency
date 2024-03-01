@@ -9,8 +9,19 @@ html, body{
     height: 100%;
     width: 100%;
 }
+.crsr{
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+    border: 1px solid #fff;
+    mix-blend-mode: difference;
+    transform: translate(-50%,-50%);
+
+}
 #loader{
-    z-index: 999;
+    z-index: 9;
     height: 100%;
     width: 100%;
     background-color: #030303;
@@ -97,4 +108,55 @@ html, body{
     height: 100vh;
     width: 100%;
     background-color: #151515;
+}
+
+#page1 #nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 7vw;
+}
+
+#nav-part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vw;
+}
+#nav-part2 h2{
+    font-size: 1vw;
+    font-weight: 500;
+}
+.hero{
+    /* background-color: red; */
+    width: 71%;
+    margin-left: 28%;
+    overflow: hidden;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+    /* justify-content: center; */
+}
+.hero:nth-child(2){
+    margin-top: 16vh;
+}
+.hero h1{
+    font-size: 7.2vw;
+    text-transform: uppercase;
+    line-height: 7.2vw;
+    font-weight: 600;
+    
+}
+#hero3 h2{
+    font-size: 7.2vw;
+    text-transform: uppercase;
+    line-height: 7.2vw;
+    font-weight: 600;
+    
+}
+#hero3 h2:hover{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 500;
 }

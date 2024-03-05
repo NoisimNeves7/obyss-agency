@@ -9,10 +9,19 @@
       href="./favicon_io/favicon-32x32.png"
       type="image/x-icon"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+  />
     <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+  
     <div class="crsr"></div>
     <div id="loader">
       <div class="line">
@@ -31,7 +40,7 @@
       </div>
     </div>
     <div id="main">
-      <div id="page1">
+      <div id="page1" data-scroll data-scroll-speed="-1">
         <div id="nav">
           <svg class="brand__svg" width="71" height="27" viewBox="0 0 71 27">
             <path
@@ -81,7 +90,7 @@
             <h2>Contacts</h2>
           </div>
         </div>
-        <div class="hero">
+        <div class="hero" id="herono1" >
           <h1>We Design</h1>
         </div>
         <div class="hero">
@@ -95,11 +104,120 @@
           <h1>experience</h1>
         </div>
       </div>
-      <div id="page2"></div>
-      <div id="page3"></div>
-      <div id="page4"></div>
+      <div id="page2" data-scroll data-scroll-speed="-2">
+        <div id="video-container">
+          <div id="video-crsr">
+            <i class="ri-play-fill"></i>
+          </div>
+          <img
+            src="https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg"
+            alt=""
+          />
+          <video
+            autoplay
+            muted
+            loop
+            src="https://obys.agency/wp-content/uploads/2022/11/Obys-Showreel-2022.mp4"
+          ></video>
+        </div>
+      </div>
+      <div id="page3" data-scroll data-scroll-speed="-2">
+        <h1>OUR PROJECTS</h1>
+        <div id="underline"></div>
+        
+      </div>
+      <div id="page4" data-scroll data-scroll-speed="-2">
+        <div id="page4-content">
+          <h1>ABOUT OBYS</h1>
+          <div id="underline"></div>
+          <p>
+            Our agency is about people who love creating, designing and
+            developing wow projects. In the same time we are a boutique agency
+            that is more than the collective. We learn and grow, win and
+            celebrate together.
+          </p>
+          <div id="page4-flex">
+            <img src="https://obys.agency/wp-content/uploads/2020/07/content-image01.jpg" alt="">
+            <p>We are happy to present our new website and updated version of Obys agency. As before we are open for new projects worldwide!
+<br><br>
+              Would you like to have award winning site or unique branding style, please say hi to our manager —info@obys.agency.
+              And we will help you with the pleasure.</p>
+          </div>
+          <div id="page4-blue-div">
+            <div class="blue-div-elem">
+              <h4>Awwwards x16</h4>
+              <p>SOTM, SOTD and Honrable Mentions</p>
+            </div>
+            <div class="blue-div-elem">
+              <h4>FWA x11</h4>
+              <p>FWA of The Day</p>
+            </div>
+            <div class="blue-div-elem">
+              <h4>CSSDA x23</h4>
+              <p>WOTM, WOTD and UI, UX, Innovation</p>
+            </div>
+            <div class="blue-div-elem">
+              <h4>Behance x25</h4>
+              <p>Interaction, Graphic Design</p>
+            </div>  
+            <div class="blue-div-elem">
+              <h4>The Very Best Of x7</h4>
+              <p>The Very Best Of, Best Of</p>
+            </div>
+          </div>
+          <div id="underline1"></div>
+        </div>
+      </div>
+      <div id="page5" data-scroll data-scroll-speed="-2">
+        <div id="elem">
+          <h1>- SPORT - <span>TECHNOLOGY</span> - FASHION </h1>
+          <h1>- SPORT - <span>TECHNOLOGY</span> - FASHION </h1>
+        </div>
+        <div id="elem2">
+          <h1>- Beauty - <span>Architecture</span> - Real Estate</h1>
+          <h1>- Beauty - <span>Architecture</span> - real estate</h1>
+        </div>
+        <div id="elem">
+          <h1>- SCIENCE - <span>PARTNERS</span> - travel</h1>
+          <h1>- SCIENCE - <span>PARTNERS</span> - travel </h1>
+        </div>
+        <div id="elem2">
+          <h1>- Hotels - <span>music</span> - automotive </h1>
+          <h1>- Hotels - <span>music</span> -automotive </h1>
+        </div>
+      </div>
+      <div class="footer" data-scroll data-scroll-speed="-2">
+        <h1>LET’S CREATE</h1>
+        <div class="underline2"></div>
+       <div class="footer-div">
+        <div class="box">
+          <h2>Socials</h2>
+         <h5>Dribbble</h5> 
+          <h5>Behance</h5>
+          <h5>Instagram</h5>
+          <h5>Facebook</h5>
+          <h5>Twitter</h5>
+          <h5>YouTube</h5>
+        </div>
+        <div class="box" id="hi">
+          <h2>Address</h2>
+         <h5>Pushkinska 5 <br>
+          61057 Kharkiv <br>
+          Ukraine</h5> 
+        </div>
+        <div class="box" id="hi">
+          <h2>Say hi!</h2>
+         <h5>mechirag@gmail.com</h5> 
+        </div>
+        
+       </div>
+       <div class="underline3"></div>
+       <h6>
+        Obys Agency © 2024</h6>
+      </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
@@ -112,7 +230,17 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+    <!-- Three.js is needed for 3d Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+<!-- ControlKit is needed for Debug Panel -->
+<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/sheryjs/dist/Shery.js"
+    ></script>
+    
     <script src="script.js"></script>
   </body>
 </html>

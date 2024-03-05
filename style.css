@@ -9,6 +9,9 @@ html, body{
     height: 100%;
     width: 100%;
 }
+body{
+    overflow-x: hidden;
+}
 .crsr{
     height: 3vw;
     width: 3vw;
@@ -17,7 +20,7 @@ html, body{
     z-index: 99;
     border: 1px solid #fff;
     mix-blend-mode: difference;
-    transform: translate(-50%,-50%);
+    /* transform: translate(-50%,-50%); */
 
 }
 #loader{
@@ -60,6 +63,7 @@ html, body{
 .line h2{
     font-size: 5vw;
     text-transform: uppercase;
+    /* color: red; */
     /* animation-name: anime; */
     opacity: 0;
     animation-duration: 1.9s;;
@@ -67,7 +71,7 @@ html, body{
 
 }
 
-@keyframes anime {
+@keyframes loader-anime {
     0%{
         font-family: "plain light";
         -webkit-text-stroke: 1px #fff;
@@ -101,7 +105,7 @@ html, body{
 
 #main{
     display: relative;
-    background-color: #030303;
+    background-color: #151515;
 }
 /* #0B0B0B */
 #page1{
@@ -109,6 +113,8 @@ html, body{
     width: 100%;
     background-color: #151515;
 }
+
+
 
 #page1 #nav{
     display: flex;
@@ -132,11 +138,22 @@ html, body{
     width: 71%;
     margin-left: 28%;
     overflow: hidden;
+    /* overflow-x: auto; */
+    /* overflow-y: auto; */
     height: fit-content;
     display: flex;
     align-items: center;
     z-index: 9999;
     /* justify-content: center; */
+}
+#herono1::before{
+    content: "01";
+    font-size: 3.4vw;
+    font-family: "silk serif";
+    position: absolute;
+    left: 18%;
+    /* top: 30%; */
+    font-weight: 500;
 }
 .hero:nth-child(2){
     margin-top: 16vh;
@@ -146,17 +163,314 @@ html, body{
     text-transform: uppercase;
     line-height: 7.2vw;
     font-weight: 600;
+    position: relative;
     
 }
 #hero3 h2{
     font-size: 7.2vw;
     text-transform: uppercase;
     line-height: 7.2vw;
-    font-weight: 600;
+    /* font-weight: 600;
+    padding-bottom: 0.8vw;
+    border-bottom: 0.5vw solid;
+    transition:all ease 0.3s ; */
     
 }
 #hero3 h2:hover{
     -webkit-text-stroke: 1px #fff;
     color: transparent;
     font-weight: 500;
+    /* border-bottom: 0.5vw solid; */
+    /* transition:all ease 0.1s ; */
 }
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    padding-top:17vh ;
+    position: relative;
+}
+#page2 #video-container{
+    height: 66vh;
+    width: 70vw;
+    position: relative;
+    left: 29%;
+    background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
+}
+#page2 img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+#video-crsr{
+    background-color: #FFA63D;
+    height: 10vw;
+    width: 10vw;
+    position: absolute;
+    border-radius: 50%;
+
+    top:-10%;
+    left :70%;
+    z-index : 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#video-crsr{
+    font-size: 3vw;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit:cover ;
+
+}
+
+#page3{
+    min-height:100vh;
+    width: 100%;
+    /* background-color: aqua; */
+    position: relative;
+    padding: 9vh 0;
+    margin-left: 28%;
+}
+
+#page3 h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    position: relative;
+    /* color: #3F7DF4; */
+}
+#page3 #underline{
+    height: 0.2vh;
+    width: 100%;
+    background-color: #fff;
+   margin: 5vw 0;
+    /* margin-right: 40vw; */
+}
+#page3 h1::before{
+    content: "02";
+    font-size: 3.4vw;
+    font-family: "silk serif";
+    position: absolute;
+    left: -15%;
+    top: 6%;
+    font-weight: 500;
+}
+#page4{
+    min-height:100vh;
+    width: 100%;
+    background-color: #151515;
+    position: relative;
+    padding: 9vh 0;
+}
+#page4-content{
+    width: 72vw;
+    margin-left: 28%;
+    /* background-color: red; */
+}
+
+#page4-content h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    position: relative;
+    /* color: #3F7DF4; */
+}
+#page4-content h1::before{
+    content: "03";
+    font-size: 3.4vw;
+    font-family: "silk serif";
+    position: absolute;
+    left: -15%;
+    top: 6%;
+    font-weight: 500;
+}
+#page4-content #underline{
+    height: 0.2vh;
+    width: 100%;
+    background-color: #fff;
+   margin: 5vw 0;
+    /* margin-right: 40vw; */
+}
+#page4-content>p{
+/* >this means the first paragraph inside page-4 content  */
+    font-size: 2.2vw;
+    width: 50%;
+    /* text-align: center; */
+    margin-bottom: 2vw;
+}
+
+#page4-flex{
+    display: flex;
+}
+#page4-flex img{
+    width: 46%;
+}
+#page4-flex p{
+    font-size: 1.01vw;
+    width: 23%;
+    line-height: 1.5vw;
+    margin-left: 2vw;
+}
+#page4-blue-div{
+    width: 35vw;
+    background-color: #3F7DF4;
+    padding: 3vw;
+    position: relative;
+    margin-top: -30vh;
+    margin-left: 47vh;
+}
+.blue-div-elem{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom:2px solid #ffffffa4;
+    padding: 2.5vw 0;
+}
+.blue-div-elem h4{
+    font-size: 1.69vw;
+    font-weight: 500;
+}
+.blue-div-elem p{
+    width: 40%;
+    font-size: 1vw;
+}
+#page4-content #underline1{
+    height: 0.2vh;
+    width: 100%;
+    background-color: #fff;
+   margin: 13vw 0 20vw 0;
+    /* margin-right: 40vw; */
+}
+
+#page5{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+#page5 #elem{
+    white-space: nowrap;
+    overflow-x: hidden;
+    /* background-color: red; */
+    margin-bottom: -2vw;
+}
+#elem h1{
+    font-size: 7vw;
+    -webkit-text-stroke: 1px #ffffff;
+    color: transparent;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 16px;
+    animation-name: anime;
+    animation-duration: 19s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    text-transform: uppercase;
+    /* background-color: red; */
+}
+@keyframes anime{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc( -100% - 20px));
+    }
+}
+#page5 #elem2{
+    white-space: nowrap;
+    overflow-x: hidden;
+    /* background-color: red; */
+    margin-bottom: -2vw;
+}
+#elem2 h1{
+    /* background-color: red; */
+    font-size: 7vw;
+    -webkit-text-stroke: 1px #ffffff;
+    color: transparent;
+    font-weight: 400;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-right: 16px;
+    transform: translateX(calc(-100% - 20px));
+    animation-name: anime;
+    animation-duration: 19s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+#elem span , #elem2 span{
+    color: transparent;
+    font-style:italic ;
+    font-family: "silk serif";
+
+}
+.footer{
+    margin-top: 12vw;
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: #3F7DF4; */
+    position: relative;
+    padding-left:28vw ;
+}
+.footer h1{
+    font-size: 7.3vw;
+    position: relative;
+}
+.footer h1::before{
+    content: "04";
+    font-size: 3.4vw;
+    font-family: "silk serif";
+    position: absolute;
+    left: -15%;
+    top: 10%;
+    font-weight: 500;
+}
+.underline2{
+    width: 100%;
+    height: 0.2vh;
+    background-color: #fff;
+    margin:6vw 0 ;
+}
+.footer-div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 5vw;
+}
+/* .footer-div #hi{
+    background-color: red;
+    margin-right: 200vh;
+} */
+.box{
+    width: 40%;
+    /* background-color: red; */
+    /* margin-right: -9vh; */
+}
+.footer-div h2{
+    font-size: 1vw;
+    margin-bottom: 2vw;
+}
+.footer-div h5{
+    font-size: 1.7vw;
+    font-weight: 500;
+}
+.footer h6{
+    font-size: 1vw;
+    margin-top: -8vh;
+    font-weight: 500;
+}
+.underline3{
+    width: 100%;
+    height: 0.19vh;
+    background-color: #fff;
+    margin:6vw 0 ;
+}
+
+
+
+
+
